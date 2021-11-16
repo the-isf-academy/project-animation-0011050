@@ -1,0 +1,41 @@
+from turtle import *
+pensize(20)
+speed(1000)
+def body(color,size):
+    fillcolor(color)
+    begin_fill()
+    right(90)
+    forward(50*size)
+    right(180)
+    circle(40*size, -180)
+    right(180)
+    forward(200*size)
+    right(180)
+    circle(110*size,-180)
+    right(180)
+    forward(200*size)
+    right(180)
+    circle(40*size,-180)
+    right(180)
+    forward(50*size)
+    right(90)
+    left(30*size)
+    circle(60,-50*size)
+    end_fill()
+def goggles(color,size):
+    forward(1)
+
+def draw_figure(color,size):
+    body(color,size)
+    setheading(90)
+    penup()
+    forward(200*size)
+    right(90)
+    forward(50)
+    pendown()
+    right(180)
+    circle(40,-180)
+
+
+draw_figure("blue",1)
+input()

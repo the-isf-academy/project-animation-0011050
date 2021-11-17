@@ -23,18 +23,25 @@ def body(color,size):
     circle(60,-50*size)
     end_fill()
 def goggles(color,size):
-    forward(1)
+    right(180)
+    circle(40,180)
+    setheading(0)
+    forward(60)
+    circle(40,180)
+    forward(60)
+    end_fill()
 
 def draw_figure(color,size):
+    fillcolor("gray")
+    begin_fill()
     body(color,size)
     setheading(90)
     penup()
     forward(200*size)
     right(90)
-    forward(50)
+    forward(80)
     pendown()
-    right(180)
-    circle(40,-180)
+
 
 
 draw_figure("blue",1)

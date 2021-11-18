@@ -33,7 +33,13 @@ def knife(size):
     knife_handle(size)
 
 
+def draw_knife(color,size):
+    with restore_state_when_finished():
+        pensize(10)
+        setheading(0)
+        knife_blade(size)
+        knife_handle(size)
 
 
-knife(1)
+
 input()

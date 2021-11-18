@@ -1,6 +1,7 @@
 from turtle import *
+from helpers import *
 pensize(20)
-speed(1000)
+speed(0)
 def body(color,size):
     fillcolor(color)
     begin_fill()
@@ -23,13 +24,28 @@ def body(color,size):
     circle(60,-50*size)
     end_fill()
 def goggles(color,size):
+
     right(180)
-    circle(40,180)
+    fillcolor(color)
+    begin_fill()
+    circle(50,180)
     setheading(0)
-    forward(60)
-    circle(40,180)
-    forward(60)
+    forward(50)
+    circle(50,180)
+    forward(50)
     end_fill()
+def backpack(color,size):
+    fillcolor(color)
+    begin_fill()
+    forward(30)
+    circle(30,90)
+    setheading(270)
+    forward(60)
+    circle(30,90)
+    forward(30)
+    end_fill()
+    left(90)
+    forward(120)
 
 def draw_figure(color,size):
     fillcolor("gray")
@@ -39,10 +55,38 @@ def draw_figure(color,size):
     penup()
     forward(200*size)
     right(90)
-    forward(80)
+    forward(50)
     pendown()
+    goggles("gray",size)
+    penup()
+    forward(140)
+    left(90)
+    forward(50)
+    right(90)
+    pendown()
+    backpack(color,size)
 
 
 
-draw_figure("blue",1)
-input()
+def draw_amogus(color,size):
+    with restore_state_when_finished():
+        fillcolor("gray")
+        pencolor("black")
+        begin_fill()
+        body(color,size)
+        setheading(90)
+        penup()
+        forward(200*size)
+        right(90)
+        forward(50)
+        pendown()
+        goggles("gray",size)
+        penup()
+        forward(140)
+        left(90)
+        forward(50)
+        right(90)
+        pendown()
+        backpack(color,size)
+
+# draw_amogus("red",1)

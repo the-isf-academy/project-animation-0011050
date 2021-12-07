@@ -1,7 +1,7 @@
 COLOR = "red"
 SLEEPTIME = 0.00 #the time in between each frame
-NUMFRAMES = 300 #the number of frames in the animation
-NUMREPEATS = 1 #the number of times the animation repeats
+NUMFRAMES = 250 #the number of frames in the animation
+NUMREPEATS = 10 #the number of times the animation repeats
 SCREENWIDTH = 800 #the height and width of the screen
 SCREENHEIGHT = 800 #the height and width of the screen
 START_X = -200 # the starting xcoordinate of the drawing

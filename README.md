@@ -1,27 +1,39 @@
 # Unit 0 Project: Animation
 
-> **Don't forget to edit this `README.md` file**
+This code is written by Julian Hua (CS9, 2021) for his unit 0 drawing project. I drew an imposter from the mobile game among us and decided to do him killing another crewmate.
 >
-> If you're interested in how to format markdown, click [here](https://www.markdownguide.org/basic-syntax/#images-1)
 
-
->*Add an overall description of your project here.*
 
 ## Intial Contents
-This is the starter code for [Project 0: Animation](http://cs.fablearn.org/courses/cs9/unit00/project). 
-Here's what is included:
 
-- `README.md` You're looking at it, or at least the formatted version. (Click "raw" to see the unformatted version.) Every project has a README explaining what it is.
-- `project.py` When this is run, it should draw your project. (If your project is well-organized, there might not be much code in `project.py`. Instead, it might import functions from other modules.)
-- `settings.py` This is where you will store your settings for your animation. Feel free to add more settings to further parameterize your project. 
+- `README.md` You're looking at it, or at least the formatted version. Every project has a README explaining what it is.
+- `project.py` When this is run, it should draw my project.
+- `settings.py` This is where I stored my settings for my animation.
 
 ## Modules
->*Describe any modules you wrote for your project here.*
+There are four modules and two main files. The four modules are:
+
+1. amogus.py - This module is called amogus.py, and it includes functions related to drawing the amogus character. It is used by project.py.
+
+2. deadbody.py - This module is called deadbody.py, and it includes functions related to drawing the dead body of the character. It is used by project.py
+
+3. knife.py - This module is called knife.py, and it includes functions related to drawing the knife. It is used by project.py.
+
+4. helpers.py - This module is called helpers.py, and it includes functions related to helping with no delay. It is used by knife.py amogus.py background.py deadbody.py project.py.
+
+5. background.py - This module is called background.py, and it includes functions related to drawing the background. It is used by project.py.
 
 ## Settings
->*Describe the different settings in your `settings.py` file and what changing them will affect.*
+COLOR = changes color of the character
+SLEEPTIME = the time in between each frame
+NUMFRAMES = he number of frames in the animation
+NUMREPEATS = the number of times the animation repeats
+SCREENWIDTH = the height and width of the screen
+SCREENHEIGHT = the height and width of the screen
+START_X =the starting xcoordinate of the drawing
+START_Y = the starting ycoordinate of the drawing
+SIZE = size of the drawing
+
 
 ## How to use
->*Describe how to run your animation here.*
-
-
+Use python3 project.py to see the animation
